@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.driveven.SingUpController">
+    <children>
+        <AnchorPane layoutY="90.0" prefHeight="310.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <TextField fx:id="login_field" layoutX="194.0" layoutY="164.0" prefHeight="35.0" prefWidth="274.0" promptText="Логин">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="password_field" layoutX="194.0" layoutY="209.0" prefHeight="35.0" prefWidth="274.0" promptText="Пароль">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="authSingButton" layoutX="230.0" layoutY="257.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="201.0" style="-fx-background-color: #F39C63;" text="Зарегистироваться " textFill="WHITE">
+                    <font>
+                        <Font name="Trebuchet MS Italic" size="17.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="singUpLastName" layoutX="383.0" layoutY="23.0" prefHeight="35.0" prefWidth="274.0" promptText="Фамилия">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="singUpName" layoutX="46.0" layoutY="23.0" prefHeight="35.0" prefWidth="274.0" promptText="Имя">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="singUpEmail" layoutX="194.0" layoutY="119.0" prefHeight="35.0" prefWidth="274.0" promptText="Эл. почта">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="singUpPhoneNumber" layoutX="194.0" layoutY="74.0" prefHeight="35.0" prefWidth="274.0" promptText="Номер телефона ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            </children>
+        </AnchorPane>
+        <Label layoutX="240.0" layoutY="14.0" prefHeight="59.0" prefWidth="219.0" text="DriveVen" textFill="WHITE">
+            <font>
+                <Font name="Trebuchet MS Bold Italic" size="50.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
