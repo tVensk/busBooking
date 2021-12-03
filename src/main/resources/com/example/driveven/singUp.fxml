@@ -21,7 +21,7 @@
                         <Font size="14.0" />
                     </font>
                 </PasswordField>
-                <Button fx:id="authSingButton" layoutX="230.0" layoutY="257.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="201.0" style="-fx-background-color: #F39C63;" text="Зарегистироваться " textFill="WHITE">
+                <Button fx:id="singUpButton" layoutX="230.0" layoutY="257.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="201.0" style="-fx-background-color: #F39C63;" text="Зарегистироваться " textFill="WHITE">
                     <font>
                         <Font name="Trebuchet MS Italic" size="17.0" />
                     </font>

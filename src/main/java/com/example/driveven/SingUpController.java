@@ -16,7 +16,7 @@ public class SingUpController {
     private URL location;
 
     @FXML
-    private Button authSingButton;
+    private Button singUpButton;
 
     @FXML
     private TextField login_field;
@@ -34,11 +34,35 @@ public class SingUpController {
     private TextField singUpName;
 
     @FXML
-    private TextField singUpPhoneNamber;
+    private TextField singUpPhoneNumber;
 
     @FXML
     void initialize() {
 
+
+        singUpButton.setOnAction(event -> {
+            
+            singUpNewUser();
+            
+
+
+        });
+
+    }
+
+    private void singUpNewUser() {
+        DatabaseHandler dbHandler = new DatabaseHandler();
+
+        String firstName = singUpName.getText();
+        String lastName = singUpLastName.getText();
+        String userName = login_field.getText();
+        String password = password_field.getText();
+        String email = singUpEmail.getText();
+        String phoneNumber = singUpPhoneNumber.getText();
+
+        User user = new User(firstName,lastName,userName,password,email,phoneNumber);
+
+        dbHandler.singUpUser(user);
     }
 
 }
